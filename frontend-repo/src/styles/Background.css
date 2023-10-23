@@ -1,0 +1,23 @@
+#BackgroundContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+#Squirrel{
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+    width: 100px;
+    opacity: 0.5;
+}
+
+#Forg{
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    position: fixed;
+    width: 100px;
+    opacity: 0.5;
+}

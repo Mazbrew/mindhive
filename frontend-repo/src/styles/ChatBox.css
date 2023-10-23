@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@keyframes phase-continuous {
+    0%{
+        opacity: 1.0;
+    }50%{
+        opacity: 0;
+    }100%{
+        opacity: 1.0;
+    }
+}
+
+#ChatBoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#ChatBoxCard{
+    width: 50%;
+    height: 66%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+}
+
+#ChatArea{
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    border-radius: 25px 25px 0px 0px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+#ChatArea::-webkit-scrollbar { 
+    display: none; 
+}
+
+#BeginTypingContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#BeginTypingText{
+    color: rgb(164, 164, 164);
+    text-align: center;
+    animation: phase-continuous 1.5s linear infinite;
+}
+
+.FromMe{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.FromAI{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.TextBubbleMe{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin: 5px 0px;
+    background-color: white;
+    width: max-content;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+}
+
+.TextBubbleAI{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin: 5px 0px;
+    background-color: cadetblue;
+    color: white;
+    width: max-content;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+}
+
+.RecommendationTable{
+    font-family: 'Nunito', sans-serif;
+    margin: 5px 0px;
+    background-color: white;
+    width: max-content;
+    overflow-wrap: break-word;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px rgba(95,158,160,0.5);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(95,158,160,0.5);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(95,158,160,0.5);
+    overflow: hidden;
+}
+
+.RecommendationTable > tr > th{
+    padding: 10px;
+    box-sizing: border-box;
+    border-top: 0.5px solid rgba(95,158,160,0.5);
+}
+
+.RecommendationTable > tr > td{
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 0.5px solid rgba(95,158,160,0.5);
+}
+
+.RecommendationTableHeader{
+    background-color: cadetblue;
+    color: white;
+    border-collapse: separate;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+.PriceTag{
+    font-weight: 600;
+}
+
+#TextArea{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 0px 0px 25px 25px;
+    background-color: rgb(158, 255, 223);
+    overflow: hidden;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+#TextArea > input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: white;
+
+    padding: 0px 25px;
+    box-sizing: border-box;
+
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+}
+
+#TextArea > button{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: white;
+    grid-template-rows: 80% 20%;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+}
+
